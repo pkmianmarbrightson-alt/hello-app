@@ -6,7 +6,7 @@ st.set_page_config(page_title="Mianmar Brightson Portfolio", page_icon="💻", l
 col1, col2, col3 = st.columns([1,2,1])
 
 with col2:
-    st.image(r"C:\Users\ADMIN\Documents\stream\photo.jpeg", width=200)   # put your photo in same folder
+    st.image("photo.jpeg", width=200)   # put your photo in same folder
     st.markdown("<h1 style='text-align:center;'>Mianmar Brightson P K</h1>", unsafe_allow_html=True)
     st.markdown("<h3 style='text-align:center;color:gray;'>Python Developer | Aspiring IT Professional</h3>", unsafe_allow_html=True)
 
