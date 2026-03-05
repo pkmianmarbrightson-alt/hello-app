@@ -2,9 +2,13 @@ import streamlit as st
 
 st.set_page_config(page_title="Mianmar Brightson Portfolio", page_icon="💻", layout="wide")
 
-# HEADER
-st.title("Mianmar Brightson P K")
-st.subheader("Python Developer | Aspiring IT Professional")
+# PROFILE SECTION
+col1, col2, col3 = st.columns([1,2,1])
+
+with col2:
+    st.image(r"C:\Users\ADMIN\Documents\stream\photo.jpeg", width=200)   # put your photo in same folder
+    st.markdown("<h1 style='text-align:center;'>Mianmar Brightson P K</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align:center;color:gray;'>Python Developer | Aspiring IT Professional</h3>", unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -57,28 +61,35 @@ col1, col2 = st.columns(2)
 with col1:
     st.subheader("File Organizer")
     st.write("""
-    - Python application to organize files automatically
-    - Used **OS and Shutil modules**
-    - Creates folders for Images, Videos, Documents
-    """)
+- Python application to organize files automatically  
+- Used **OS and Shutil modules**  
+- Creates folders for Images, Videos, Documents
+""")
 
 with col2:
     st.subheader("Resume Generator")
     st.write("""
-    - Command-line tool using **Python OOP**
-    - Collects user input
-    - Generates formatted resume file
-    """)
+- Command-line tool using **Python OOP**  
+- Collects user input  
+- Generates formatted resume file
+""")
 
 st.markdown("---")
 
 # CONTACT
 st.header("Contact")
 
-st.write("📞 Phone: 9884986356")
-st.write("📧 Email: pkmianmarbrightson@gmail.com")
-st.write("📍 Location: Chennai")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write("📞 9884986356")
+
+with col2:
+    st.write("📧 pkmianmarbrightson@gmail.com")
+
+with col3:
+    st.write("📍 Chennai")
 
 st.markdown("---")
 
-st.caption("© 2026 Mianmar Brightson P K")
+st.markdown("<p style='text-align:center;'>© 2026 Mianmar Brightson P K</p>", unsafe_allow_html=True)
